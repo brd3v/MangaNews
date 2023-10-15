@@ -1,0 +1,44 @@
+.d-flex{
+    justify-content: space-between;
+    height: 200px;
+    margin-bottom: 2rem;
+
+}
+.col-md-6{
+
+
+}
+
+img{
+    min-width: 200px;
+    max-height: 200px;
+    padding-left: 1rem;
+}
+.container h2{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+p{
+    text-align: initial;
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+    color: orange;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+a:hover{
+    color: blue;
+}
+
+.col-md-6{
+    margin-bottom: 2rem;
+}
+.titulo,
+p{
+    color: #4D4C7D;
+}
