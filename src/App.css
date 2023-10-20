@@ -1,3 +1,21 @@
-body{
-    background-color: #F5F5F5;
+.body{
+ 
+  
+}
+@media(max-width: 630px){
+    .body{
+        max-width: 100%;
+     
+    }
+    .container{
+   width: 100%;
+}
+
+}
+#root{
+    width: 100%;
+  
+}
+.app_o{
+    min-width: 100%;
 }

@@ -1,11 +1,13 @@
 .d-flex{
+    display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 400px;
     margin-bottom: 2rem;
 
 }
 .col-md-6{
-
+margin-bottom: 2rem;
+height: 100%;
 
 }
 
@@ -30,6 +32,7 @@ a{
     font-weight: bold;
     font-size: 25px;
     cursor: pointer;
+    margin-top: 2rem;
 }
 a:hover{
     color: blue;
@@ -41,4 +44,27 @@ a:hover{
 .titulo,
 p{
     color: #4D4C7D;
+}
+@media(max-width: 630px){
+    .d-flex{
+        height: 100%;
+        margin: 1rem;
+        flex-direction: column;
+    }
+    .container h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    .a{
+        
+        text-align: center;
+        width:100%;
+        margin-top: 2rem;
+    }
+    .d-flex p {
+        max-width: 100%;
+        width: 100%;
+        display: inline;
+        overflow: hidden;
+    }
 }

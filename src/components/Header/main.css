@@ -1,15 +1,16 @@
-.header{
+.header {
     background-color: #363062;
     display: flex;
-align-items: center;
-justify-content: center;
-color: #F99417;
-margin-bottom: 5rem;
-position: sticky;
-top: 0;    
-    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: #F99417;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    height: 100px;
 }
-.header h2{
+
+.header h2 {
     height: 70px;
     width: 400px;
     justify-content: center;
@@ -17,6 +18,18 @@ top: 0;
     font-size: 50px;
     display: flex;
     align-items: center;
-    background-color: black;
     border-radius: 1rem;
+}
+
+@media(max-width: 630px) {
+    .header {
+
+        width: 100%;
+    }
+
+    .header h2 {
+        height: auto;
+        width: auto;
+        font-size: 20px;
+    }
 }

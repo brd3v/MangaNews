@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './main.css'
 
 export default function Inicial() {
@@ -8,6 +8,7 @@ export default function Inicial() {
     fetch('https://api.consumet.org/news/ann/recent-feeds')
       .then((response) => response.json())
       .then((data) => {
+      
         setNews(data); // Atualiza o estado com os dados da API
       })
       .catch((error) => {
@@ -19,14 +20,16 @@ export default function Inicial() {
     <div className='row'>
       
         {news.map((item, index) => (
-            <div className='col-md-6' key={index}>
-                <div className='container'>
-          <h2 className='titulo'>{item.title}</h2 >
-          <div className='d-flex'>
-          <p >{item.preview.full}</p>
-          <img src={item.thumbnail} alt="" />
-          </div>
-          <a href={item.url}>Listten a news</a>
+                      <div className='col-md-6' key={index}>
+                          <div className='container'>
+                    <h2 className='titulo'>{item.title}</h2 >
+                    <div className='d-flex'>
+                    <p >{item.preview.full}</p>
+                    <img src={item.thumbnail} alt="" />
+                 
+
+          </div> <div className='a'><a href={item.url}>Listten a news</a>
+            </div>  
           </div>
           </div>
         ))}
